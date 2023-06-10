@@ -21,10 +21,34 @@ Run the code with:
 
       python3 src/main.py
       
+
+## Examples
+
+* To replicate our experiments on 1-D convection equation, use the following command:
+```
+python3 src/main.py --optimizer_name Adam --lr 1e-2 --weight_decay 0 --num_epochs 20000\
+                    --activation sin --num_tasks 5 --alpha_fc 0.95 --system convection\
+                    --a 0.0 --b 1.0 --N_f 1000 --nt 100 --xgrid 256 --seed 0
+```
+
+* To replicate our experiments on the sequense of reaction, diffusion and reaction-diffusion equations, use the following command:
+```
+python3 src/main.py --optimizer_name Adam --lr 1e-2 --weight_decay 0 --num_epochs 20000\
+                    --activation sin --num_tasks 3 --alpha_fc 0.95 --system rd\
+                    --u0_str gauss --a 0.0 --b 1.0 --N_f 1000 --nt 100 --xgrid 256 --seed 0
+```
+
+* If you want to use our code to train a regular PINN, for example on 1-D convection, use the following command:
+```
+python3 src/main.py --optimizer_name Adam --lr 1e-2 --weight_decay 0 --num_epochs 20000\
+                    --activation sin --num_tasks 1 --system convection\
+                    --a 0.0 --b 1.0 --N_f 1000 --nt 100 --xgrid 256 --seed 0
+```
+      
      
 ## Acknowledgements
 
-Our code implementation is based on the following GitHub project: https://github.com/a1k12/characterizing-pinns-failure-modes, which is an official implementation of the work ["Characterizing possible failure modes in physics-informed neural networks"](https://arxiv.org/abs/2109.01050), *Advances in Neural Information Processing Systems* **34** (2021) by Aditi S. Krishnapriyan, Amir Gholami, Shandian Zhe, Robert M. Kirby, Michael W. Mahoney.
+Our code implementation is based on the following GitHub project: https://github.com/a1k12/characterizing-pinns-failure-modes, which is the official implementation of the work ["Characterizing possible failure modes in physics-informed neural networks"](https://arxiv.org/abs/2109.01050), *Advances in Neural Information Processing Systems* **34** (2021) by Aditi S. Krishnapriyan, Amir Gholami, Shandian Zhe, Robert M. Kirby, Michael W. Mahoney.
       
       
 ## Citation
