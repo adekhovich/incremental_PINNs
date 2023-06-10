@@ -38,10 +38,10 @@ python3 src/main.py --optimizer_name Adam --lr 1e-2 --weight_decay 0 --num_epoch
                     --u0_str gauss --a 0.0 --b 1.0 --N_f 1000 --nt 100 --xgrid 256 --seed 0
 ```
 
-* If you want to use our code to train a regular PINN, for example on 1-D convection, use the following command:
+* If you want to use our code to train a regular PINN, for example on 1-D convection with `β = 10`, use the following command:
 ```
 python3 src/main.py --optimizer_name Adam --lr 1e-2 --weight_decay 0 --num_epochs 20000\
-                    --activation sin --num_tasks 1 --system convection\
+                    --activation sin --num_tasks 1 --system convection --beta 10\
                     --a 0.0 --b 1.0 --N_f 1000 --nt 100 --xgrid 256 --seed 0
 ```
       
