@@ -8,12 +8,15 @@ Physics-informed neural networks (PINNs) have recently become a powerful tool fo
 ## Installation
 
 * Clone this github repository using:
-
-      git clone https://github.com/adekhovich/incremental_PINNs.git
+```
+git clone https://github.com/adekhovich/incremental_PINNs.git
+cd incremental_PINNs
+```
 
 * Install requirements using:
-
-      pip install -r requirements.txt
+```
+pip install -r requirements.txt
+```
       
 ## Train the model
 
