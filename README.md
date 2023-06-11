@@ -60,7 +60,7 @@ python3 src/main.py --optimizer_name Adam --lr 1e-2 --weight_decay 0 --num_epoch
                     --a 0.0 --b 1.0 --N_f 1000 --nt 100 --xgrid 256 --seed 0
 ```
 
-* To replicate our experiments on the sequense of reaction, diffusion and reaction-diffusion equations, use the following command:
+* To replicate our experiments on the sequence of 1-D reaction, diffusion and reaction-diffusion equations, use the following command:
 ```
 python3 src/main.py --optimizer_name Adam --lr 1e-2 --weight_decay 0 --num_epochs 20000\
                     --activation sin --num_tasks 3 --alpha_fc 0.95 --system rd\
