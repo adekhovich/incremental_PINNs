@@ -119,7 +119,7 @@ def main():
     parser.add_argument('--num_epochs', type=int, default=20000, help='Number of training epochs.')
 
     parser.add_argument('--num_tasks', type=int, default=5, help='Number of tasks')
-    parser.add_argument('--alpha_fc', type=float, default=0.8, help='Pruning parameter')
+    parser.add_argument('--alpha_fc', type=float, default=0.95, help='Pruning parameter')
 
     parser.add_argument('--L', type=float, default=1.0, help='Multiplier on loss f.')
 
