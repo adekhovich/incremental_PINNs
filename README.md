@@ -30,14 +30,14 @@ Possible arguments:
 --weight_decay      weight decay (default: 0.0)
 --num_epohs         number of training epochs (default: 20000)
 --num_tasks         number of tasks (default: 5)
---alpha_fc          pruning parameter
+--alpha_fc          pruning parameter (default: 0.95)
 --L                 multiplier on the regularization parameter (default: 1.0)
 --a                 start of the interval (default: 0)
 --b                 end of the interval (default: 1)
 --xgrid             size of the xgrid (default: 256)
---nu                viscosity coefficient for diffusion
---rho               reaction coefficient
---beta              speed of propagation for convection
+--nu                viscosity coefficient for diffusion (default: 1.0)
+--rho               reaction coefficient (default: 1.0)
+--beta              speed of propagation for convection (default: 1.0)
 --u0_str            initial condition (default: 'sin(x)'; also supports 'gauss' for reaction/reaction-diffusion)
 --layers            number of layers in the network (default: '50,50,50,50,1')
 --net               net architecture (default: 'DNN')
